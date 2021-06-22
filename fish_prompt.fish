@@ -37,7 +37,7 @@ end
 function fish_prompt
   set -l last_status $status
 
-  _print_in_color "\n"(prompt_pwd) blue
+  _print_in_color "\n"(prompt_hostname)":"(prompt_pwd) blue
 
   __fish_git_prompt " %s"
 
