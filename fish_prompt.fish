@@ -41,5 +41,7 @@ function fish_prompt
 
   __fish_git_prompt " %s"
 
-  _print_in_color "\n❯ " (_prompt_color_for_status $last_status)
+  _print_in_color "\n"(date +%H:%M) blue
+  _print_in_color " ❯ " (_prompt_color_for_status $last_status)
+
 end
